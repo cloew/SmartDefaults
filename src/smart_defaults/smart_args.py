@@ -24,3 +24,7 @@ class SmartArg:
             args[self.inlineIndex] = newValue
         else:
             kwargs[self.argName] = newValue
+        
+    def providedAs(self, args, kwargs, value):
+        """ Return if this argument has been specified in the given arguments as the given value """
+        return self.isProvided(args, kwargs) and self.getValue(args, kwargs) == value

@@ -1,9 +1,6 @@
 from function_metadata import FunctionMetadata
 from smart_default import SmartDefault
-
-def HasProviderInterface(value):
-    """ Return if the default value has the provider interface """
-    return hasattr(value, "shouldProvide") and hasattr(value, "getValue")
+from providers.provider_helper import HasProviderInterface
 
 def smart_defaults(fn):
     """ Set the function to use Smart Defaults """

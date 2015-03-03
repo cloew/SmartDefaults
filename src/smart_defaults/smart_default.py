@@ -11,7 +11,7 @@ class SmartDefault:
         
     def shouldUseDefault(self, args, kwargs):
         """ Return if the default value should be used """
-        return self.provider.shouldProvide(self.argument, args, kwargs)
+        return not self.argument.isProvided(args, kwargs) or self.provider.shouldProvide(self.argument, args, kwargs)
         
     def setDefault(self, args, kwargs):
         """ Return get the default value for the argument """

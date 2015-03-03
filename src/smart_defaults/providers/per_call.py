@@ -9,7 +9,7 @@ class PerCall:
         
     def shouldProvide(self, argument, args, kwargs):
         """ Return if the Provider should be used """
-        return not argument.isProvided(args, kwargs)
+        return False
         
     def getValue(self, *args, **kwargs):
         """ Return the value for this default """
