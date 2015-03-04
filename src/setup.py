@@ -5,5 +5,5 @@ setup(name='smart_defaults',
       description="",
       author='',
       author_email='',
-      packages=['smart_defaults'],
+      packages=['smart_defaults', 'smart_defaults.providers'],
      )
