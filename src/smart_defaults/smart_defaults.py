@@ -1,6 +1,6 @@
-from function_metadata import FunctionMetadata
-from smart_default import SmartDefault
-from providers.provider_helper import HasProviderInterface
+from .function_metadata import FunctionMetadata
+from .smart_default import SmartDefault
+from .providers.provider_helper import HasProviderInterface
 
 def smart_defaults(fn):
     """ Set the function to use Smart Defaults """

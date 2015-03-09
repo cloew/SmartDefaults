@@ -1,4 +1,4 @@
-from provider_helper import HasProviderInterface
+from .provider_helper import HasProviderInterface
 
 class EvenIfNone:
     """ Represents a default value that should be used 
