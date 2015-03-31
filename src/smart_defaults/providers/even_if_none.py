@@ -17,6 +17,6 @@ class EvenIfNone:
         """ Return if the Provider should be used """
         return argument.providedAs(args, kwargs, None) or (self.provider and self.provider.shouldProvide(argument, args, kwargs))
         
-    def getValue(self, *args, **kwargs):
+    def getValue(self, argument, *args, **kwargs):
         """ Return the value for this default """
         return self.defaultValue if self.defaultValue else self.provider.getValue(*args, **kwargs)

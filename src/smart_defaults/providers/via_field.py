@@ -10,6 +10,6 @@ class ViaField:
         """ Return if the Value Provider should be used """
         return False
         
-    def getValue(self, obj, *args, **kwargs):
+    def getValue(self, argument, obj, *args, **kwargs):
         """ Return the value for this default """
         return getattr(obj, self.fieldName)

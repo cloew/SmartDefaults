@@ -15,4 +15,4 @@ class SmartDefault:
         
     def setDefault(self, args, kwargs):
         """ Return get the default value for the argument """
-        self.argument.setValue(args, kwargs, self.provider.getValue(*args, **kwargs))
+        self.argument.setValue(args, kwargs, self.provider.getValue(self.argument, *args, **kwargs))

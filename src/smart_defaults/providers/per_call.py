@@ -11,6 +11,6 @@ class PerCall:
         """ Return if the Provider should be used """
         return False
         
-    def getValue(self, *args, **kwargs):
+    def getValue(self, argument, *args, **kwargs):
         """ Return the value for this default """
         return copy.deepcopy(self.defaultValue)
