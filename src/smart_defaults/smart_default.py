@@ -3,11 +3,11 @@ from .smart_args import SmartArg
 class SmartDefault:
     """ Represents a smart default argument """
         
-    def __init__(self, argName, provider, metadata):
+    def __init__(self, argument, provider):
         """ Set the default's metadata """
-        self.argument = SmartArg(argName, metadata)
+        self.argument = argument #SmartArg(argName, metadata)
         self.provider = provider
-        self.metadata = metadata
+        # self.metadata = metadata
         
     def shouldUseDefault(self, args, kwargs):
         """ Return if the default value should be used """

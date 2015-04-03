@@ -2,10 +2,10 @@
 class SmartArg:
     """ Helper class to handle interacting with a particular argument """
     
-    def __init__(self, argName, funcMetadata):
+    def __init__(self, argName, index):
         """ Initialize the smart argument with its name and the metadata of the function """
         self.argName = argName
-        self.inlineIndex = funcMetadata.argToIndex[self.argName]
+        self.inlineIndex = index
         
     def isProvided(self, args, kwargs):
         """ Return if this argument has been specified in the given arguments """
