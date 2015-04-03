@@ -1,4 +1,3 @@
-from .smart_args import SmartArg
 
 class SmartDefault:
     """ Represents a smart default argument """
