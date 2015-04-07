@@ -19,4 +19,4 @@ class EvenIfNone:
         
     def getValue(self, argument, *args, **kwargs):
         """ Return the value for this default """
-        return self.defaultValue if self.defaultValue else self.provider.getValue(argument, *args, **kwargs)
+        return self.defaultValue if self.defaultValue is not None else self.provider.getValue(argument, *args, **kwargs)
