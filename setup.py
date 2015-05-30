@@ -6,5 +6,6 @@ setup(name='smart_defaults',
       author='',
       author_email='',
       packages=['smart_defaults', 'smart_defaults.providers'],
+      install_requires=["kao_fn"],
       dependency_links=['git+http://github.com/cloew/KaoFn']
      )
